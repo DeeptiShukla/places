@@ -9,8 +9,8 @@ The goal was to:
 1. The data for the places collection was imported - primarily through the google maps API.
 2. Implemented geolocation queries using a 2dsphere index for the places collection, which will locate a place within a distance.
 3. The Photo model class has the capabilty to:
-   * import photo images from files.<br />
-   * extract geolocation information from the image using the exifr gem.<br />
-   * store, update, and retrieve photo information and data from GridFS.<br />
+   * import photo images from files.
+   * extract geolocation information from the image using the exifr gem.
+   * store, update, and retrieve photo information and data from GridFS.
 4. It can also display *place* information and associated *photo* images.
 5. It also has supporting functions to locate the nearest *places* for a *photo* and associate each *photo* with a *place* within a distance.
