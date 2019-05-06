@@ -1,28 +1,16 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This was completed as part of Coursera's course on Ruby on Rails Web Services and Integration with MongoDB.
 
-Things you may want to cover:
+The goal was to:
+- Implement a data tier to manage *places* and *photos* and associate *photos* with a nearby *place*
+- Implement a web tier to view *places* and their associated *photos*
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+1. The data for the places collection was imported - primarily through the google maps API.
+2. Implemented geolocation queries using a 2dsphere index for the places collection, which will locate a place within a distance.
+3. The Photo model class has the capabilty to:
+   * import photo images from files.<br />
+   * extract geolocation information from the image using the exifr gem.<br />
+   * store, update, and retrieve photo information and data from GridFS.<br />
+4. It can also display *place* information and associated *photo* images.
+5. It also has supporting functions to locate the nearest *places* for a *photo* and associate each *photo* with a *place* within a distance.
